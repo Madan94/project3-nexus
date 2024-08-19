@@ -169,7 +169,10 @@ form.addEventListener('submit', function(e) {
 // Navbar Toggle
 
 function change(){
+    let navtoggle=document.getElementById("nav-icon");
     let list = document.getElementById("nav-list");
+
+    navtoggle.classList.toggle("display-icon");
     
     if (list.style.display === "block") {
         list.style.display = "none";
@@ -178,4 +181,3 @@ function change(){
     }
 
 }
-
