@@ -1470,6 +1470,32 @@ hr{
       background: linear-gradient(to right, rgba(255, 255, 255, 0), white);
     }
 
+    /* Blogs Section */
+
+    .blog-card1{
+        width:50vh;
+    }
+
+    .blog-card2{
+        width:50vh;
+    }
+
+    .blog-card3{
+        width:50vh;
+    }
+
+    .blog-card4{
+        width:50vh;
+    }
+
+    .blog-card5{
+        width:50vh;
+    }
+
+    .blog-card6{
+        width:50vh;
+    }
+
     /* Contact Section */
 
     .contact-container{
@@ -1528,7 +1554,7 @@ hr{
     font-size:15px;
     font-family: "Poppins", sans-serif;
     font-style: normal;
-    width:300px;
+    width:375px;
 }
 
 
