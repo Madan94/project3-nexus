@@ -1,0 +1,902 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Techy Software - A Complete IT Solutions</title>
+    <!--Template CSS Styles-->
+    <link rel="stylesheet" href="style.css" />
+    <!--Font Awesome Styles-->
+    <script
+      src="https://kit.fontawesome.com/4b4f5a1c3a.js"
+      crossorigin="anonymous"
+    ></script>
+    <!--Swiper Js Template-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet"/>
+    <!--Inline styles-->
+    <style>
+    .swiper {
+      width: 100%;
+      padding-top: 50px;
+      padding-bottom: 50px;
+    }
+
+    .swiper-slide {
+      background-position: center;
+      background-size: cover;
+      width: 350px;
+      background-color: #fff;
+      display: flex;
+      box-shadow: 0 15px 50px rgba(0,0,0,0.2);
+      filter:blur(4px);
+      border-radius:10px;
+    }
+
+    .swiper-slide-active{
+        filter:blur(0px);
+        background-color:yellow;
+    }
+
+    .swiper-slide img {
+      display: block;
+      width: 100%;
+    }
+
+    .testimonialBox{
+        position:relative;
+        width:100%;
+        padding:40px;
+        padding-top:90px;
+        color:#999;   
+    }
+
+    .testimonialBox .icon{
+        font-size: 50px;
+        position: absolute;
+        top:20px;
+        color:#000;
+    }
+
+    .testimonialBox .content p{
+        color:#000;
+        text-align:left;
+    }
+
+    .testimonialBox .details{
+        display:flex;
+        align-items: center;
+        margin-top: 20px;
+    }
+
+    .testimonialBox .details .imgBx{
+        position: relative;
+        width:60px;
+        height:60px;
+        border-radius:50%;
+        overflow: hidden;
+        margin-right:10px;
+    }
+
+    .testimonialBox .details h3{
+      color:#10274a;
+      text-align:left;
+    }
+
+    .swiper-container-3d .swiper-slide-shadow-left,
+    .swiper-container-3d .swiper-slide-shadow-right{
+        background-image: none;
+    }
+
+    </style>
+  </head>
+  <body>
+    <div class="bg-container">
+      <!--Navbar Section-->
+      <navbar class="navbar" id="navbar">
+        <div class="nav">
+          <a class="company-logo" href="#home">Techy Software</a>
+          <a class="navbar-toggle" id="navbar-toogle" onclick="change()"><i class="fa-solid fa-bars"           style="color: #ffffff;"></i></a>
+        </div>
+        <ul class="nav-list" id="nav-list">
+          <li class="nav-item"><a href="#home" class="nav-link" id="active">Home</a></li>
+          <li class="nav-item">
+            <a href="#about" class="nav-link">About us</a>
+          </li>
+          <li class="nav-item">
+            <a href="#service" class="nav-link">Our Services</a>
+          </li>
+          <li class="nav-item">
+            <a href="#testimonial" class="nav-link">Testimonial</a>
+          </li>
+          <li class="nav-item"><a href="#pricing" class="nav-link">Pricing</a></li>
+          <li class="nav-item"><a href="#blog" class="nav-link">Blogs</a></li>
+          <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+        <a class="contact-btn" href="https://wa.me/message/XO4VJ3N7K7IAC1" target="_blank" id="contact-btn">Connect with us</a>
+      </navbar>
+
+      <!--Header Section-->
+      <header class="header" id="home">
+        <div class="main-container">
+          <video autoplay muted loop>
+            <source src="assets/bg.mp4" type="video/mp4" />
+          </video>
+          <div class="overlay"></div>
+          <div class="home-content">
+            <div class="content-section">
+              <h1 class="heading">
+                We Make Technology <br />
+                Easy for <span style="color: yellow">you.</span>
+              </h1>
+              <p class="paragraph">
+                <span style="color: yellow; font-weight: 800"
+                  ><span style="font-size: 25px">T</span>echy Software</span
+                >
+                is a Global Platform to find niche digital services from India.
+                We are a vibrant team of experienced digital enthusiasts who
+                provide out-of-the-box ideas and solutions for our clients.
+              </p>
+              <a href="#service" class="explore-btn">Explore us</a>
+              <a href="#contact" class="hire-btn">Let's Talk</a>
+              <p class="paragraph">* Start your Project with us <span style="color:yellow;">Today.</span></p>
+            </div>
+            <div class="image-section">
+              <img src="assets/img2.png" class="image" alt="Software-logo" />
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <!-- Facts Section-->
+      <section class="fact">
+        <h1 class="fact-heading">How Techy Software Works !</h1>
+        <div class="facts-list">
+          <div class="fact-item">
+            <img src="assets/fact1.webp" alt="Research" />
+            <h1>1. Research</h1>
+            <p>We Understand our Customers</p>
+          </div>
+          <div class="fact-item">
+            <img src="assets/fact2.webp" alt="Strategy" />
+            <h1>2. Strategize</h1>
+            <p>Customized strategies to fit your needs</p>
+          </div>
+          <div class="fact-item">
+            <img src="assets/fact3.webp" alt="Launch" />
+            <h1>3. Launch</h1>
+            <p>Generate results by turning ideas into action</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- About us Section-->
+      <section class="about" id="about">
+        <div class="about-container">
+          <div class="about-content">
+            <h1>Why Choose us</h1>
+            <p>
+              At Techy Software, we believe in doing things differently. We
+              believe in coming up with ideas and strategies that are unique and
+              in line with your brand. We aim to bring your brand to life by
+              weaving your brand story and connecting it with your audience. Our
+              goal, as a digital marketing and technology company, is to come up
+              with high-end proposals that will transform and boost your brand.
+            </p>
+            <ul class="bullet-points">
+              <li class="point">
+                Experienced team delivering innovative solutions.
+              </li>
+              <li class="point">Customer-focused approach for satisfaction.</li>
+              <li class="point">Proven track record of success.</li>
+              <li class="point">Tailored solutions for unique needs.</li>
+              <li class="point">Timely delivery of quality products.</li>
+              <li class="point">Dedicated support for seamless integration.</li>
+            </ul>
+            <a href="#service">Explore more</a>
+          </div>
+          <div class="banner-image">
+            <img src="assets/banner.svg" class="banner" alt="Team work" />
+          </div>
+        </div>
+      </section>
+
+      <!--Services Section-->
+      <section class="services" id="service">
+        <h1 class="main-heading">Our Digital Services</h1>
+        <div class="service-container">
+          <div class="services-section1">
+            <div class="service-card" id="service-card1">
+              <div class="content">
+                <h1 id="service-heading1">Digital Marketing</h1>
+                <p id="service-para1">
+                  Well-equipped with Facebook, Instagram, YouTube, Google, SEO,
+                  and more.
+                </p>
+              </div>
+              <div class="icon">
+                <img
+                  src="assets/digital marketing.webp"
+                  alt="digital marketing"
+                  class="service-icon"
+                />
+              </div>
+            </div>
+            <div class="service-card" id="service-card2">
+              <div class="content">
+                <h1 id="service-heading2">Web Designing</h1>
+                <p id="service-para2">
+                  We are all-rounders when it comes to Web Designing
+                </p>
+              </div>
+              <div class="icon">
+                <img
+                  src="assets/digital marketing.webp"
+                  alt="digital marketing"
+                  class="service-icon"
+                />
+              </div>
+            </div>
+            <div class="service-card" id="service-card3">
+              <div class="content">
+                <h1 id="service-heading3">Branding</h1>
+                <p id="service-para3">
+                  We help you write your branding journey
+                </p>
+              </div>
+              <div class="icon">
+                <img
+                  src="assets/digital marketing.webp"
+                  alt="digital marketing"
+                  class="service-icon"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="welcome-section">
+            <img src="assets/welcome.webp" alt="welcome" class="welcome-icon" />
+          </div>
+          <div class="services-section2" style="margin-top: 100px">
+            <div class="service-card" id="service-card4">
+              <div class="content">
+                <h1 id="service-heading4">Web Application</h1>
+                <p id="service-para4">
+                  We breathe life into your business with Web Apps
+                </p>
+              </div>
+              <div class="icon">
+                <img
+                  src="assets/digital marketing.webp"
+                  alt="digital marketing"
+                  class="service-icon"
+                />
+              </div>
+            </div>
+            <div class="service-card" id="service-card5">
+              <div class="content">
+                <h1 id="service-heading5">Video Marketing</h1>
+                <p id="service-para5">
+                  We create engaging videos that go viral
+                </p>
+              </div>
+              <div class="icon">
+                <img
+                  src="assets/digital marketing.webp"
+                  alt="digital marketing"
+                  class="service-icon"
+                />
+              </div>
+            </div>
+            <div class="service-card" id="service-card6">
+              <div class="content">
+                <h1 id="service-heading6">Technology</h1>
+                <p id="service-para6">
+                  We connect brands, automation, to profit via Technology
+                </p>
+              </div>
+              <div class="icon">
+                <img
+                  src="assets/digital marketing.webp"
+                  alt="digital marketing"
+                  class="service-icon"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--Testimonial Section-->
+      <section class="testimonial" id="testimonial">
+        <h1 class="main-heading" style="color:#fff;">Hear from Our Clients !</h1>
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="testimonialBox">
+                    <i class="fa-solid fa-quote-left icon"></i>
+                    <div class="content">
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Velit est maxime, natus, quisquam iste consectetur iusto sunt eos recusandae porro quibusdam molestiae quae vel nesciunt quia a minus officia suscipit?</p>
+                    <div class="details">
+                        <div class="imgBx">
+                            <img src="https://i.pinimg.com/736x/77/9c/98/779c98c48f22a1851ebc12b6fc2900f0.jpg"/>
+                        </div>
+                        <h3>Social Media Influencer</h3>
+                    </div>
+                    </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="testimonialBox">
+                    <i class="fa-solid fa-quote-left icon"></i>
+                    <div class="content">
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Velit est maxime, natus, quisquam iste consectetur iusto sunt eos recusandae porro quibusdam molestiae quae vel nesciunt quia a minus officia suscipit?</p>
+                    <div class="details">
+                        <div class="imgBx">
+                            <img src="https://i.pinimg.com/736x/77/9c/98/779c98c48f22a1851ebc12b6fc2900f0.jpg"/>
+                        </div>
+                        <h3>Social Media Influencer</h3>
+                    </div>
+                    </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="testimonialBox">
+                    <i class="fa-solid fa-quote-left icon"></i>
+                    <div class="content">
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Velit est maxime, natus, quisquam iste consectetur iusto sunt eos recusandae porro quibusdam molestiae quae vel nesciunt quia a minus officia suscipit?</p>
+                    <div class="details">
+                        <div class="imgBx">
+                            <img src="https://i.pinimg.com/736x/77/9c/98/779c98c48f22a1851ebc12b6fc2900f0.jpg"/>
+                        </div>
+                        <h3>Social Media Influencer</h3>
+                    </div>
+                    </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="testimonialBox">
+                    <i class="fa-solid fa-quote-left icon"></i>
+                    <div class="content">
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Velit est maxime, natus, quisquam iste consectetur iusto sunt eos recusandae porro quibusdam molestiae quae vel nesciunt quia a minus officia suscipit?</p>
+                    <div class="details">
+                        <div class="imgBx">
+                            <img src="https://i.pinimg.com/736x/77/9c/98/779c98c48f22a1851ebc12b6fc2900f0.jpg"/>
+                        </div>
+                        <h3>Social Media Influencer</h3>
+                    </div>
+                    </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="testimonialBox">
+                    <i class="fa-solid fa-quote-left icon"></i>
+                    <div class="content">
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Velit est maxime, natus, quisquam iste consectetur iusto sunt eos recusandae porro quibusdam molestiae quae vel nesciunt quia a minus officia suscipit?</p>
+                    <div class="details">
+                        <div class="imgBx">
+                            <img src="https://i.pinimg.com/736x/77/9c/98/779c98c48f22a1851ebc12b6fc2900f0.jpg"/>
+                        </div>
+                        <h3>Social Media Influencer</h3>
+                    </div>
+                    </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="testimonialBox">
+                    <i class="fa-solid fa-quote-left icon"></i>
+                    <div class="content">
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Velit est maxime, natus, quisquam iste consectetur iusto sunt eos recusandae porro quibusdam molestiae quae vel nesciunt quia a minus officia suscipit?</p>
+                    <div class="details">
+                        <div class="imgBx">
+                            <img src="https://i.pinimg.com/736x/77/9c/98/779c98c48f22a1851ebc12b6fc2900f0.jpg"/>
+                        </div>
+                        <h3>Social Media Influencer</h3>
+                    </div>
+                    </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
+        <!-- Testimonial End -->
+      </section>
+
+      <!--Pricing Section-->
+      <section class="pricing" id="pricing">
+        <h1 class="main-heading">Explore Our Plans & Find your Perfect Fit!</h1>
+        <div class="container">
+            <h2 class="title">The Right Plan for Your Business</h2>
+            <p class="description">
+              We have several powerful plans to showcase your business and get
+              discovered <br />
+              as a creative entrepreneurs. Everything you need.
+            </p>
+            <div class="switch">
+              <span class="chech-text-month">Bill Monthly</span
+              ><input
+                type="checkbox"
+                id="switch"
+                onchange="myFunction(this)"
+              /><label for="switch">Toggle</label><span class="chech-text-year">Bill Annualy</span>
+            </div>
+            <div class="pricing__box grid">
+              <div class="card-3d-part">
+                <div class="card-3d-wrap">
+                  <div class="card-3d-wrapper">
+                    <div class="card-front">
+                      <div class="pricing-wrap">
+                        <h4 class="card__title">Intro</h4>
+                        <ul class="card__list">
+                          <li>
+                            <i class="ri-check-fill"></i> Upload Video
+                            up to 720p Resolution
+                          </li>
+                          <li class="op-hidden">
+                            <i class="ri-check-fill"></i> Attachment &
+                            Post Scheduling
+                          </li>
+                          <li class="op-hidden">
+                            <i class="ri-check-fill"></i> Set your rates
+                          </li>
+                          <li class="op-hidden">
+                            <i class="ri-check-fill"></i> Exclusive
+                            Deals
+                          </li>
+                          <li class="op-hidden">
+                            <i class="ri-check-fill"></i> Advanced
+                            Statistics
+                          </li>
+                        </ul>
+                        <div class="price">
+                          ₹<span>4999</span><span class="time">/month</span>
+                        </div>
+                        <button class="btn">Choose</button>
+                      </div>
+                    </div>
+                    <div class="card-back">
+                      <div class="pricing-wrap">
+                        <h4 class="card__title">Intro</h4>
+                        <ul class="card__list">
+                          <li>
+                            <i class="ri-check-fill"></i> Upload Video
+                            up to 720p Resolution
+                          </li>
+                          <li class="op-hidden">
+                            <i class="ri-check-fill"></i> Attachment &
+                            Post Scheduling
+                          </li>
+                          <li class="op-hidden">
+                            <i class="ri-check-fill"></i> Set your rates
+                          </li>
+                          <li>
+                            <i class="ri-check-fill"></i> Exclusive
+                            Deals
+                          </li>
+                          <li class="op-hidden">
+                            <i class="ri-check-fill"></i> Advanced
+                            Statistics
+                          </li>
+                        </ul>
+                        <div class="price">
+                          ₹<span>55,000</span><span class="time">/year</span>
+                        </div>
+                        <button class="btn">Choose</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card-3d-part">
+                <div class="card-3d-wrap">
+                  <div class="card-3d-wrapper">
+                    <div class="card-front">
+                      <div class="pricing-wrap">
+                        <h4 class="card__title">Base</h4>
+                        <ul class="card__list">
+                          <li>
+                            <i class="ri-check-fill"></i> Upload Video
+                            up to 720p Resolution
+                          </li>
+                          <li>
+                            <i class="ri-check-fill"></i> Attachment &
+                            Post Scheduling
+                          </li>
+                          <li class="op-hidden">
+                            <i class="ri-check-fill"></i> Set your rates
+                          </li>
+                          <li class="op-hidden">
+                            <i class="ri-check-fill"></i> Exclusive
+                            Deals
+                          </li>
+                          <li class="op-hidden">
+                            <i class="ri-close-fill"></i> Advanced
+                            Statistics
+                          </li>
+                        </ul>
+                        <div class="price">
+                          ₹<span>9999</span><span class="time">/month</span>
+                        </div>
+                        <button class="btn">Choose</button>
+                      </div>
+                    </div>
+                    <div class="card-back">
+                      <div class="pricing-wrap">
+                        <h4 class="card__title">Base</h4>
+                        <ul class="card__list">
+                          <li>
+                            <i class="ri-check-fill"></i> Upload Video
+                            up to 720p Resolution
+                          </li>
+                          <li>
+                            <i class="ri-check-fill"></i> Attachment &
+                            Post Scheduling
+                          </li>
+                          <li class="op-hidden">
+                            <i class="ri-check-fill"></i> Set your rates
+                          </li>
+                          <li class="op-hidden">
+                            <i class="ri-check-fill"></i> Exclusive
+                            Deals
+                          </li>
+                          <li class="op-hidden">
+                            <i class="ri-close-fill"></i> Advanced
+                            Statistics
+                          </li>
+                        </ul>
+                        <div class="price">
+                          ₹<span>1,15,000</span><span class="time">/year</span>
+                        </div>
+                        <button class="btn">Choose</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card-3d-part">
+                <div class="card-3d-wrap">
+                  <div class="card-3d-wrapper">
+                    <div class="card-front">
+                      <div class="pricing-wrap">
+                        <h4 class="card__title">Pro <span class="sale">Save  ₹3999</span></h4>
+                        <ul class="card__list">
+                          <li>
+                            <i class="ri-check-fill"></i> Upload Video
+                            up to 720p Resolution
+                          </li>
+                          <li>
+                            <i class="ri-check-fill"></i> Attachment &
+                            Post Scheduling
+                          </li>
+                          <li>
+                            <i class="ri-check-fill"></i> Set your rates
+                          </li>
+                          <li>
+                            <i class="ri-check-fill"></i> Exclusive
+                            Deals
+                          </li>
+                          <li class="op-hidden">
+                            <i class="ri-close-fill"></i> Advanced
+                            Statistics
+                          </li>
+                        </ul>
+                        <div class="price">
+                          ₹<span>14999</span><span class="time">/month</span>
+                        </div>
+                        <button class="btn">Try 1 month</button>
+                      </div>
+                    </div>
+                    <div class="card-back">
+                      <div class="pricing-wrap">
+                        <h4 class="card__title">Pro</h4>
+                        <ul class="card__list">
+                          <li>
+                            <i class="ri-check-fill"></i> Upload Video
+                            up to 720p Resolution
+                          </li>
+                          <li>
+                            <i class="ri-check-fill"></i> Attachment &
+                            Post Scheduling
+                          </li>
+                          <li>
+                            <i class="ri-check-fill"></i> Set your rates
+                          </li>
+                          <li>
+                            <i class="ri-check-fill"></i> Exclusive
+                            Deals
+                          </li>
+                          <li class="op-hidden">
+                            <i class="ri-close-fill"></i> Advanced
+                            Statistics
+                          </li>
+                        </ul>
+                        <div class="price">
+                          ₹<span>1,80,000</span><span class="time">/year</span>
+                        </div>
+                        <button class="btn">Try 1 year</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card-3d-part">
+                <div class="card-3d-wrap">
+                  <div class="card-3d-wrapper">
+                    <div class="card-front">
+                      <div class="pricing-wrap">
+                        <h4 class="card__title">Enterprise</h4>
+                        <ul class="card__list">
+                          <li>
+                            <i class="ri-check-fill"></i> Upload Video
+                            up to 720p Resolution
+                          </li>
+                          <li>
+                            <i class="ri-check-fill"></i> Attachment &
+                            Post Scheduling
+                          </li>
+                          <li>
+                            <i class="ri-check-fill"></i> Set your rates
+                          </li>
+                          <li>
+                            <i class="ri-check-fill"></i> Exclusive
+                            Deals
+                          </li>
+                          <li>
+                            <i class="ri-check-fill"></i> Advanced
+                            Statistics
+                          </li>
+                        </ul>
+                        <div class="price">
+                          <span></span><span class="time" style="font-weight:600;">Customized Plan</span>
+                        </div>
+                        <button class="btn">Let's talk</button>
+                      </div>
+                    </div>
+                    <div class="card-back">
+                      <div class="pricing-wrap">
+                        <h4 class="card__title">Enterprise</h4>
+                        <ul class="card__list">
+                          <li>
+                            <i class="ri-check-fill"></i> Upload Video
+                            up to 720p Resolution
+                          </li>
+                          <li>
+                            <i class="ri-check-fill"></i> Attachment &
+                            Post Scheduling
+                          </li>
+                          <li>
+                            <i class="ri-check-fill"></i> Set your rates
+                          </li>
+                          <li>
+                            <i class="ri-check-fill"></i> Exclusive
+                            Deals
+                          </li>
+                          <li>
+                            <i class="ri-check-fill"></i> Advanced
+                            Statistics
+                          </li>
+                        </ul>
+                        <div class="price">
+                          <span></span><span class="time" style="font-weight:600;">Customized plan</span>
+                        </div>
+                        <button class="btn">Let's talk</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+      </section>
+
+      <!--Customer's Section-->
+      <section class="customer" id="customer">
+        <h1 class="main-heading">Customers who trust us !</h1>
+        <div class="logo-slider" id="logo-slider">
+          <div class="slider-track" id="slider-track">
+              <img src="assets/customer1.webp" height="100" width="250" alt="logo"/>
+              <img src="assets/customer2.webp" height="100" width="250" alt="logo"/>
+              <img src="assets/customer3.webp" height="100" width="250" alt="logo"/>
+              <img src="assets/customer4.webp" height="100" width="250" alt="logo"/>
+              <img src="assets/customer5.webp" height="100" width="250" alt="logo"/>
+              <img src="assets/customer6.webp" height="100" width="250" alt="logo"/>
+              <img src="assets/customer7.webp" height="100" width="250" alt="logo"/>
+              <img src="assets/customer8.webp" height="100" width="250" alt="logo"/> 
+          </div>
+        </div>
+      </section>
+
+      <!--Blogs Section-->
+      <section class="blog" id="blog">
+        <h1 class="main-heading">Read Our Latest Blogs !</h1>
+        <div class="blog-container">
+            <div class="blog-card1">
+                <h1>How to reach a larger set Audience?</h1>
+                <p>Techy Software <i class="fa-solid fa-circle" style="color: #d3d3d3;"></i> June 01, 2024</p>
+            </div>
+            <div class="blog-card2">
+                <h1>Importance of hastag Strategies</h1>
+                <p>Techy Software <i class="fa-solid fa-circle" style="color: #d3d3d3;"></i> June 01, 2024</p>
+            </div>
+            <div class="blog-card3">
+                <h1>How to protect your's customers data privacy in digital marketing?</h1>
+                <p>Techy Software <i class="fa-solid fa-circle" style="color: #d3d3d3;"></i> June 01, 2024</p>
+            </div>
+            <div class="blog-card4">
+                <h1>Importance of running paid ads</h1>
+                <p>Techy Software <i class="fa-solid fa-circle" style="color: #d3d3d3;"></i> June 01, 2024</p>
+            </div>
+            <div class="blog-card5">
+                <h1>In a recent study, 93% marketers said video plays a crucial role in their marketing strategy, and 76% said video marketing had improved their bottom line.</h1>
+                <p>Techy Software <i class="fa-solid fa-circle" style="color: #d3d3d3;"></i> June 01, 2024</p>
+            </div>
+            <div class="blog-card6">
+                <h1>Having a strong band is essential, bu how does it benefit a company?</h1>
+                <p>Techy Software <i class="fa-solid fa-circle" style="color: #d3d3d3;"></i> June 01, 2024</p>
+            </div>
+        </div>
+      </section>
+
+      <!--Contact us Section-->
+      <section class="contact" id="contact">
+        <h1 class="main-heading">Contact out teams</h1>
+        <div class="contact-container">
+          <div class="form-section">
+            <form class="form" id="form">
+              <!-- Replace with your Access Key -->
+                <input type="hidden" name="access_key" value="2c59c46e-f7f9-41db-ae44-14026b938953">
+              <div class="name-card">
+                <label for="name">Name <i class="fa-solid fa-asterisk point" style="color: #379e27;"></i></label>
+                <br>
+                <input type="text" id="name" required name="name"/>
+              </div>
+              <div class="name-card">
+                <label for="number">Contact Number <i class="fa-solid fa-asterisk point" style="color: #379e27;"></i></label>
+                <br>
+                <input type="text" id="number" required name="number"/>
+              </div>
+              <div class="name-card">
+                <label for="email">Email <i class="fa-solid fa-asterisk point" style="color: #379e27;"></i></label>
+                <br>
+                <input type="text" id="email" required name="email"/>
+              </div>
+              <div class="name-card">
+                <label for="servicess">Services You Need <i class="fa-solid fa-asterisk point" style="color: #379e27;"></i></label>
+                <br>
+                <input type="text" id="servicess" required name="service"/>
+              </div>
+              <div class="name-card">
+                <label for="msg">Your Message</label>
+                <br>
+                <textarea rows="10"  id="msg" name="message"></textarea>
+              </div>
+              <div class="submit-btn">
+                <button class="submit"  id="submit" type="submit">Send</button>
+              </div>
+              <div id="result"></div>
+            </form>
+          </div>
+          <div class="line-section"></div>
+          <hr class="horizontal-line">
+          <div class="social-section">
+            <div class="social-card">
+              <i class="fa-solid fa-envelope" style="color: #379e27;"></i>
+              <h1>Still Need help?</h1>
+              <p>contact@techysoftware.in</p>
+              <a href="mailto:contact@techysoftware.in">Compose now<i class="fa-solid fa-arrow-right" style="color: #379e27;"></i></a>
+            </div>
+            <hr >
+            <div class="social-card">
+              <i class="fa-brands fa-instagram" style="color: #379e27;"></i>
+              <h1>Follow us</h1>
+              <p>techysoftware.in on instagram</p>
+              <a href="https://instagram.com" target="_blank">Follow now<i class="fa-solid fa-arrow-right" style="color: #379e27;"></i></a>
+            </div>
+            <hr >
+            <div class="social-card">
+              <i class="fa-solid fa-phone-volume" style="color: #379e27;"></i>
+              <h1>Direct Phone Call</h1>
+              <p>+91 9876543210</p>
+              <a href="callto:+91 9876543210">Call now<i class="fa-solid fa-arrow-right" style="color: #379e27;"></i></a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--Footer Section-->
+      <div class="footer-template"></div>
+      <footer class="footer" id="footer">
+        <div class="footer-section">
+          <div class="company-profile">
+            <a class="title">Techy Software</a>
+            <p>Growth Based Digital Marketing & <br> Technology Company</p>
+            <a href="#contact">Contact us ></a>
+          </div>
+          <div class="newsletter">
+            <h1>Subscribe Newsletter</h1>
+            <input type="email" placeholder="Enter your Email" />
+            <br>
+            <a href="#contact" class="subscribe">Subscribe</a>
+            <div class="social-links">
+              <a href=""><i class="fa-brands fa-whatsapp"></i></a>
+              <a href=""><i class="fa-brands fa-linkedin"></i></a>
+              <a href=""><i class="fa-brands fa-facebook"></i></a>
+              <a href=""><i class="fa-brands fa-instagram"></i></a>
+              <a href=""><i class="fa-brands fa-twitter"></i></a>
+            </div>
+          </div>
+          <div class="quick-links">
+            <h1>Quick links</h1>
+            <ul class="links">
+              <li><a href="#about">Why Techy Software</a></li>
+              <li><a href="#service">Our Services</a></li>
+              <li><a href="#testimonial">Testimonials</a></li>
+              <li><a href="#pricing">Pricing</a></li>
+              <li><a href="#contact">Contact us</a></li>
+              <li><a href="">Privacy Policy</a></li>
+              <li><a href="">Terms & Condition</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="copyright">
+          <p>Copyright © 2024 <span><a class="brand-name" href="#home">Techy Software</a></span> All rights reserved</p>
+        </div>
+      </footer>
+    </div>
+
+    <!--Floating Icons Section - Left Side-->
+    <section class="floating-icons1">
+      <ul>
+        <a href=""><li class="facebook"><i class="fa-brands fa-facebook"></i></li></a>
+        <a href=""><li class="linkedin"><i class="fa-brands fa-linkedin"></i></li></a>
+        <a href=""><li class="whatsapp"><i class="fa-brands fa-whatsapp"></i></li></a>
+        <a href=""><li class="phone"><i class="fa-solid fa-phone-volume"></i></li></a>
+      </ul>
+    </section>
+
+    <!--Floating Icons Section - Right Side-->
+    <section class="floating-icons2">
+      <ul>
+        <a href="#contact"><li>Get A Quote</li></a>
+      </ul>
+    </section>
+
+    <!--Template Javascript-->
+    <script src="script.js"></script>
+     <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+    var swiper = new Swiper(".mySwiper", {
+      effect: "coverflow",
+      grabCursor: true,
+      centeredSlides: true,
+      slidesPerView: "auto",
+      coverflowEffect: {
+        rotate: 0,
+        stretch: 0,
+        depth: 100,
+        modifier: 1,
+        slideShadows: true,
+      },
+      autoplay: {
+        delay: 1500,
+        disableOnInteraction: false,
+      },
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+      loop:true,
+    });
+    </script>
+  </body>
+</html>
+
+      
+
+      
