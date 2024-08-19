@@ -43,6 +43,10 @@ a{
     text-decoration: none;
 }
 
+.bg-container{
+    overflow-x: hidden;
+}
+
 /* Navbar Section */
 
 .navbar{
