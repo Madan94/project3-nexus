@@ -1014,6 +1014,28 @@ hr{
     display:none;
 }
 
+/* Feedback section */
+
+.feedback{
+    text-align:center;
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+    position:relative;
+    width:100%;
+}
+
+.feedback-form{
+    margin-top:20px;
+}
+
+.feedback-form textarea{
+    padding:10px;
+    font-size:15px;
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+    width:600px;
+}
+
 /* Footer Section */
 
 .footer{
@@ -1497,6 +1519,18 @@ hr{
     .contact-container form textarea{
         width:300px;
     }
+
+    /* Feedback section */
+
+
+.feedback-form textarea{
+    padding:10px;
+    font-size:15px;
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+    width:300px;
+}
+
 
     /* footer Section */
 

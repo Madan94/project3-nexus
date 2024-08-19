@@ -181,3 +181,44 @@ function change(){
     }
 
 }
+
+// Feedback Form Handling 
+
+const feedbackform = document.getElementById('feedback-form');
+const feedbackresult = document.getElementById('feedback-result');
+
+feedbackform.addEventListener('submit', function(e) {
+  e.preventDefault();
+  const formData = new FormData(feedbackform);
+  const object = Object.fromEntries(formData);
+  const json = JSON.stringify(object);
+  feedbackresult.innerHTML = "Please wait..."
+
+    fetch('https://api.web3forms.com/submit', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+                'Accept': 'application/json'
+            },
+            body: json
+        })
+        .then(async (response) => {
+            let json = await response.json();
+            if (response.status == 200) {
+                feedbackresult.innerHTML = "Feedback submitted successfully";
+            } else {
+                console.log(response);
+                feedbackresult.innerHTML = json.message;
+            }
+        })
+        .catch(error => {
+            console.log(error);
+            feedbackresult.innerHTML = "Something went wrong!";
+        })
+        .then(function() {
+            feedbackform.reset();
+            setTimeout(() => {
+                feedbackresult.style.display = "none";
+            }, 3000);
+        });
+});
