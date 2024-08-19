@@ -1362,7 +1362,7 @@ hr{
 
     .about-content{
         order:2;
-        width:475px;
+        width:350px;
     }
 
     .banner-image{
@@ -1430,7 +1430,7 @@ hr{
 
     .contact-container form input{
         padding:10px;
-        width:450px;
+        width:300px;
         margin-top:10px;
         margin-bottom:10px;
         background-color: #FAFAFA;
@@ -1441,7 +1441,7 @@ hr{
     }
 
     .contact-container form textarea{
-        width:450px;
+        width:300px;
     }
 
     /* footer Section */
@@ -1452,7 +1452,7 @@ hr{
         justify-content:center;
         align-items:flex-start;
         gap:2rem;
-        margin-left:100px;
+        margin-left:50px;
     }
 
 }
